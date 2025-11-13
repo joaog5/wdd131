@@ -1,0 +1,10 @@
+@media screen and (min-width: 500px){
+    header{
+        background-color: black;
+        color: white;
+    }
+
+    figure{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
