@@ -1,0 +1,82 @@
+/*I used the principal 2 colors in Rio de Janeiro State's flag. I've traveled last month with my wife to this city, as knowled as "the marvelous city"*/
+
+body{
+    font-family:"roboto", sans-serif;
+
+}
+
+
+.hero-image {
+    background-image:url('images/cristo.webp');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #007FFF;
+    
+    object-fit: cover;
+}
+
+.hero-image img {
+    width:100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+
+.hero-content{
+    text-align: center;
+    background-color: #007FFF;
+    color: white;
+}
+
+.info1, .info2 {
+  position: absolute;
+  width: 280px;
+  background: rgba(255, 255, 255, 0.85);
+  color:black;
+  backdrop-filter: blur(3px);
+  padding: 5px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.info1 h2,.info2 h2 {
+  background: #007FFF;
+  padding: 8px 12px;
+  color: white;
+  border-radius: 4px;
+  margin-top: -20px;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+
+.info1 {
+  top: 50%;
+  left: 5%;
+  transform: translateY(-110%);
+}
+
+/* Card da direita */
+.info2 {
+  top: 50%;
+  right: 5%;
+  transform: translateY(-25%);
+}
+
+.info1 ul ,.info2 ul {
+  list-style: none;
+  padding: 10px 0 0;
+  margin: 0;
+}
+
+.info1 li,.info2 li {
+  margin: 6px 0;
+}
+
+
+footer{
+    text-align: center;
+    background-color: #007FFF;
+    color: white;
+}
