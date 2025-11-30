@@ -1,0 +1,26 @@
+
+.boldonse-regular {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+h2 {
+    font-family:"Chewy", sans-serif;
+}
+
+p {
+    font-family:'Open sans', sans-serif;
+}
+
+section img{
+    width: 550px;
+    height: 500px;
+}
