@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="João Victor Sabino">
+    <meta name="description" content="week 05 assignment">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+
+    <title>Product Review</title>
+</head>
+<body>
+
+<main>
+    <h1>Product Review</h1>
+
+    <form id="reviewForm" method="get" action="review.html">
+
+        <label for="product">Product Name:</label>
+        <select id="product" name="productName" required>
+            <option value="" disabled selected>Choose a product...</option>
+        </select>
+
+        <label>Rating</label>
+        <div class="rating">
+            <label><input type="radio" name="rating" value="1" required>★</label>
+            <label><input type="radio" name="rating" value="2">★★</label>
+            <label><input type="radio" name="rating" value="3">★★★</label>
+            <label><input type="radio" name="rating" value="4">★★★★</label>
+            <label><input type="radio" name="rating" value="5">★★★★★</label>
+        </div>
+
+        <label>Date of Installation:</label>
+        <input type="date" name="date" required>
+
+        <label>Useful Features</label>
+        <label><input type="checkbox" name="check" value="durability"> Durability</label>
+        <label><input type="checkbox" name="check" value="use"> Ease of Use</label>
+        <label><input type="checkbox" name="check" value="performance"> Performance</label>
+        <label><input type="checkbox" name="check" value="design"> Design</label>
+
+        <label for="review">Written Review (Optional)</label>
+        <textarea id="review" name="review"></textarea>
+
+        <label for="userName">Your Name (Optional)</label>
+        <input type="text" id="userName" name="userName">
+
+        <button type="submit">Send Review</button>
+
+    </form>
+</main>
+
+<footer>
+    &copy;<span id="year"></span> | João Victor Sabino |
+    Last Modification: <span id="lastModified"></span>
+</footer>
+
+<script src="scripts/form.js" defer></script>
+</body>
+</html>

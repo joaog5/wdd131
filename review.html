@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+</head>
+<body>
+
+<main>
+    <h1>Review Submitted</h1>
+
+    <p><strong>Product:</strong> <span id="productName"></span></p>
+    <p><strong>Rating:</strong> <span id="rating"></span></p>
+    <p><strong>Date of Installation:</strong> <span id="date"></span></p>
+    <p><strong>Useful Features:</strong> <span id="features"></span></p>
+    <p><strong>Written Review:</strong> <span id="textReview"></span></p>
+    <p><strong>Name:</strong> <span id="userName"></span></p>
+
+    <p>You have submitted <span id="reviewCount"></span> reviews.</p>
+</main>
+
+<script>
+    const p = new URLSearchParams(window.location.search);
+
+    document.getElementById("productName").textContent = p.get("productName");
+    document.getElementById("rating").textContent = p.get("rating");
+    document.getElementById("date").textContent = p.get("date");
+    document.getElementById("textReview").textContent = p.get("review");
+    document.getElementById("userName").textContent = p.get("userName");
+
+    const checks = p.getAll("check").join(", ");
+    document.getElementById("features").textContent = checks;
+
+    let count = Number(localStorage.getItem("reviewCount")) || 0;
+    count++;
+    localStorage.setItem("reviewCount", count);
+
+    document.getElementById("reviewCount").textContent = count;
+</script>
+
+</body>
+</html>
