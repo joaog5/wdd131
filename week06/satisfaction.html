@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="João Victor Sabino">
+    <title>Satisfaction | Duda's Candies and Honey Bread</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/honey.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">Duda's Candies and Honey Bread</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="satisfaction.html" aria-current="page">Satisfaction</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>We don't sell just candies. We sell experiencies!</h2>
+            <p>Hello, my name is Eduarda a.k.a Duda. I every used to bake candies with my mom who teached me how to make many of those wonder edibles, including my famous <strong>Honey Bread!</strong></p>
+        </div>
+    </section>
+    
+    <main class="container">
+        <h2>Product Satisfaction</h2>
+
+        <section class="rating-panel">
+            <form id="ratingForm" class="rating-form">
+                <fieldset>
+                    <legend>Product</legend>
+                    <label for="product">Select a product</label>
+                    <select id="product" name="product" required>
+                        <option value="">Select a product</option>
+                        <option value="Honey Bread">Honey Bread</option>
+                        <option value="Lemon Pie">Lemon Pie</option>
+                        <option value="Brigadeiro">Brigadeiro</option>
+                        <option value="Chocolate Truffle">Chocolate Truffle</option>
+                        <option value="Brownie with Paçoca">Brownie with Paçoca</option>
+                        <option value="Cake">Cake</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Rating</legend>
+
+                    <div class="stars">
+                        <label><input type="radio" name="rating" value="5"><span class="star">★</span></label>
+                        <label><input type="radio" name="rating" value="4"><span class="star">★</span></label>
+                        <label><input type="radio" name="rating" value="3"><span class="star">★</span></label>
+                        <label><input type="radio" name="rating" value="2"><span class="star">★</span></label>
+                        <label><input type="radio" name="rating" value="1"><span class="star">★</span></label>
+                    </div>
+
+                    <input type="text" name="name" placeholder="Your name (optional)">
+                    <textarea name="comment" rows="4" placeholder="Write your comment" required></textarea>
+                </fieldset>
+
+                <div class="actions">
+                    <button type="submit" class="btn primary">Submit</button>
+                    <button type="button" id="viewStats" class="btn">View Statistics</button>
+                </div>
+            </form>
+        </section>
+
+        <aside class="stats">
+            <h3>Statistics</h3>
+            <div id="statsSummary">
+                <p>No reviews yet.</p>
+            </div>
+        </aside>
+    </main>
+
+    <div id="modal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close">×</button>
+            <h3>Thank you!</h3>
+            <div id="modalBody"></div>
+            <div class="modal-actions">
+                <button id="openPopup" class="btn primary">Open Summary</button>
+                <button id="closeModal" class="btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <section>&copy;<span id="year"></span> | João Victor Sabino | SP - Brazil</section>
+        <section>Last Modification: <span id="lastModified"></span></section>
+    </footer>
+
+    <script src="scripts/honey.js" defer></script>
+</body>
+</html>
