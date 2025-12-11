@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="João Victor Sabino">
+    <meta name="description" content="Dudas's candies and honey bread. This site is about the selling of the best honey bread in the world">
+    <title>Duda's Candies and Honey Bread</title>
+    <link rel="stylesheet" href="styles/honey.css">
+    <link rel="stylesheet" href="styles/honey-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Chewy&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">Dudas's Candies and Honey Bread</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="satisfaction.html">Satisfaction</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h2>We don't sell just candies. We sell experiencies!</h2>
+            <p>Hello, my name is Eduarda a.k.a Duda. I every used to bake candies with my mom who teached me how to make many of those wonder edibles, including my famous <strong>Honey Bread!</strong></p>
+        </div>
+    </section>
+
+    <main>
+        <h2>Our Products</h2>
+        <section class="images">
+            <figure>
+                <img src="images/honey1.webp" alt="honey bread">
+                <figcaption>Honey Bread</figcaption>
+                <figcaption>Description: Our principal recipe. Is a sweet bread making by honey with dulce de leche and chocolate. Could other fillings than dulce de leche (check availability)  </figcaption>
+                <figcaption>Price: $2,00</figcaption>
+            </figure>
+            <figure>
+                <img src="images/lemon.webp" alt="Lemon Pie">
+                <figcaption>Lemon Pie</figcaption>
+                <figcaption>Description: A tradicional lemon pie that is make with haitian lemon </figcaption>
+                <figcaption>Price: $8,00</figcaption>
+            </figure>
+            <figure>
+                <img src="images/btruffle.webp" alt="Brigadeiro">
+                <figcaption>Brigadeiro</figcaption>
+                <figcaption>Description: The very tradicional brazilian truffles also known as 'brigadeiro'.  that is bake by cocoa powder with condensed milk and milk cream</figcaption>
+                <figcaption>Price: $22,00/hundred</figcaption>
+            </figure>
+            <figure>
+                <img src="images/truffle.webp" alt="truffle">
+                <figcaption>Chocolate Truffle</figcaption>
+                <figcaption>Description: Famous chocolate truffle that you can chose the filling/flavor (check availability)</figcaption>
+                <figcaption>Price: $1,50</figcaption>
+            </figure>
+            <figure>
+                <img src="images/brownie.webp" alt="brownie with paçoca">
+                <figcaption>Brownie with Paçoca</figcaption>
+                <figcaption>Description: The american brownie with a tipical brazilian candy made from peanut with sugar</figcaption>
+                <figcaption>Price: $1,00/pc</figcaption>
+                <figcaption>Price: $8,00/whole</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cake.webp" alt="Cake">
+                <figcaption>Cake (we also bake for Anniversaries and Marriages)</figcaption>
+                <figcaption>Description: We also make cakes for your event. You can choose the flavor, filling and topping </figcaption>
+                <figcaption>Contact Us for Prices</figcaption>
+            </figure>
+        </section>
+
+        <h2>You can contact us</h2>
+        <form method="get" action="thanks.html" class="cont">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>Your Name*: <input type="text" name="fname" required></label>
+                <label>Phone*: <input type="tel" name="phone" required></label>
+                <label>Email: <input type="email" name="email" placeholder="optional"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Products</legend>
+                <div>Audience</div>
+                <label><input type="radio" name="audience" value="enjoy">I want to <strong>ENJOY</strong></label>
+                <label><input type="radio" name="audience" value="event">I need for an <strong>EVENT</strong></label>
+                
+
+                <div>Products that I want</div>
+                <label><input type="checkbox" name="product" value="yes">Honey Bread</label>
+                <label><input type="checkbox" name="code" value="yes">Lemon Pie</label>
+                <label><input type="checkbox" name="product" value="yes">Brigadeiro</label>
+                <label><input type="checkbox" name="product" value="yes">Chocolate Truffle</label>
+                <label><input type="checkbox" name="product" value="yes">Brownie with Paçoca</label>
+                <label><input type="checkbox" name="product" value="yes">Anniversary Cake</label>
+            </fieldset>
+            <fieldset>
+                <legend>Observations</legend>
+                <input type="textarea">
+            </fieldset>
+
+            <input type="submit" value="Contact Us">
+        <section class="contact">
+            <a href="https://instagram.com/" target="_blank" class="insta">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" class="logo">
+            </a>
+            <a href="https://facebook.com/" target="_blank" class="face">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="facebook" class="logo">
+            </a>
+            <a href="https://wa.me/" target="_blank" class="whatsapp">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="logo">
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <section>
+            &copy;<span id="year"></span> | João Victor Sabino | SP - Brazil
+        </section>
+        <section>
+            Last Modification: <span id="lastModified"></span>
+        </section>
+    </footer>
+
+    <script src="scripts/honey.js" defer></script> 
+</body>
+</html>
